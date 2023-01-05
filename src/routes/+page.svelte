@@ -4,7 +4,7 @@
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import settings from '$stores/settings';
 
-	settings.setProjectID("asdf")
+	settings.setProjectID("my project id")
 </script>
 
 <svelte:head>
@@ -21,7 +21,7 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app a{$settings.projectID}a
+		to your new<br />SvelteKit app --{$settings.projectID}--
 	</h1>
 
 	<h2>

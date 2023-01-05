@@ -1,7 +1,10 @@
-<script>
+<script lang="ts">
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import settings from '$stores/settings';
+
+	settings.setProjectID("asdf")
 </script>
 
 <svelte:head>
@@ -18,7 +21,7 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your new<br />SvelteKit app a{$settings.projectID}a
 	</h1>
 
 	<h2>
